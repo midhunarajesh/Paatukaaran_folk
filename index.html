@@ -1,478 +1,575 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="google-site-verification" content="AnAoYWAEVNBTMggDOMSBMVcTJXACUBgBYeCkQunXnoo" />
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#4b267d">
-<meta name="description" content="Subin Das — Kerala Nadan Pattu Artist. Folk performances, photo gallery and WhatsApp event booking.">
-<title>Subin Das | Kerala Folk Artist</title>
+  <meta charset="UTF-8">
 
-<style>
-:root {
-  --green:#4b267d;
-  --deep:#1b102b;
-  --leaf:#7652a8;
-  --gold:#e7dcff;
-  --cream:#ffffff;
-  --muted:#eee7f7;
-  --card:#35204f;
-  --line:#ffffff22;
-}
+  <meta name="google-site-verification" content="AnAoYWAEVNBTMggDOMSBMVcTJXACUBgBYeCkQunXnoo" />
 
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; scroll-padding-top:82px; }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b267d">
+  <meta name="description" content="Subin Das — Kerala Nadan Pattu artist. Explore folk performances, photo gallery and event booking.">
 
-body {
-  margin:0;
-  background:var(--deep);
-  color:var(--cream);
-  font-family:system-ui,-apple-system,"Noto Sans Malayalam",sans-serif;
-  line-height:1.7;
-}
+  <title>Subin Das | Kerala Folk Artist</title>
 
-a { color:inherit; text-decoration:none; }
-img { display:block; max-width:100%; }
-.wrap { width:min(1120px,92%); margin:auto; }
+  <style>
+    :root {
+      --green: #4b267d;
+      --deep: #1b102b;
+      --leaf: #7652a8;
+      --gold: #e7dcff;
+      --cream: #ffffff;
+      --muted: #eee7f7;
+      --card: #35204f;
+      --line: #ffffff22;
+    }
 
-.topline {
-  height:5px;
-  background:linear-gradient(90deg,var(--gold),#fff,var(--gold));
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-header {
-  position:sticky;
-  top:0;
-  z-index:20;
-  background:#1b102bed;
-  backdrop-filter:blur(12px);
-  border-bottom:1px solid var(--line);
-}
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
 
-.nav {
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:18px;
-  padding:13px 0;
-}
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--deep);
+      color: var(--cream);
+      line-height: 1.7;
+    }
 
-.brand {
-  font-weight:850;
-  color:var(--gold);
-  font-size:1.08rem;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.navlinks {
-  display:flex;
-  gap:19px;
-  flex-wrap:wrap;
-  font-size:.91rem;
-  color:var(--muted);
-}
+    img {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
 
-.navlinks a:hover { color:var(--gold); }
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
 
-.hero {
-  padding:76px 0 68px;
-  background:
-    radial-gradient(ellipse at 80% 15%,#7652a8 0,transparent 35%),
-    radial-gradient(ellipse at 5% 90%,#60408a 0,transparent 32%),
-    linear-gradient(135deg,#241238,#4b267d);
-}
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #1b102bf2;
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
 
-.hero-grid {
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:44px;
-  align-items:center;
-}
+    nav {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
 
-.eyebrow,.label {
-  color:var(--gold);
-  font-size:.78rem;
-  letter-spacing:2px;
-  font-weight:800;
-}
+    .logo {
+      color: var(--gold);
+      font-size: 1.2rem;
+      font-weight: 800;
+      letter-spacing: .5px;
+    }
 
-.hero h1 {
-  font-size:clamp(2.6rem,6vw,5rem);
-  line-height:1.12;
-  margin:12px 0 18px;
-}
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-.hero h1 span { color:var(--gold); }
-.hero p { color:var(--muted); font-size:1.08rem; }
+    .nav-links a {
+      font-size: .9rem;
+      color: #eee7f7;
+      transition: color .2s;
+    }
 
-.actions {
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:26px;
-}
+    .nav-links a:hover {
+      color: var(--gold);
+    }
 
-.btn {
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:12px 19px;
-  border-radius:999px;
-  background:var(--gold);
-  color:#241238;
-  font-weight:800;
-  border:1px solid var(--gold);
-  transition:transform .2s,filter .2s;
-}
+    .hero {
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      background:
+        linear-gradient(90deg, #1b102bf2 0%, #1b102bbd 52%, #1b102b55 100%),
+        url("hero.jpg") center/cover no-repeat;
+    }
 
-.btn:hover { transform:translateY(-2px); filter:brightness(1.05); }
-.btn.secondary { background:transparent; color:white; border-color:#ffffff55; }
+    .hero-content {
+      max-width: 720px;
+      padding: 90px 0;
+    }
 
-.hero-art {
-  overflow:hidden;
-  border-radius:28px;
-  border:1px solid #ffffff35;
-  box-shadow:0 24px 65px #0004;
-}
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: .78rem;
+      font-weight: 700;
+    }
 
-.hero-art img {
-  width:100%;
-  height:420px;
-  object-fit:cover;
-  object-position:center;
-}
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.1;
+      margin: 18px 0;
+    }
 
-section { padding:68px 0; }
+    h1 span {
+      color: var(--gold);
+    }
 
-.section-title {
-  font-size:clamp(1.8rem,4vw,2.7rem);
-  line-height:1.25;
-  margin:8px 0 12px;
-}
+    .hero p {
+      max-width: 600px;
+      color: #eee7f7;
+      font-size: 1.05rem;
+    }
 
-.lead { color:var(--muted); max-width:760px; }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
 
-.about-grid,.contact-grid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:35px;
-  align-items:center;
-}
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 7px;
+      font-weight: 700;
+      transition: transform .2s, background .2s;
+    }
 
-.about-photo img {
-  width:100%;
-  height:370px;
-  object-fit:cover;
-  border-radius:20px;
-  border:1px solid var(--line);
-  box-shadow:0 18px 45px #0004;
-}
+    .btn:hover {
+      transform: translateY(-2px);
+    }
 
-.quote {
-  margin-top:18px;
-  padding:22px 24px;
-  border-left:3px solid var(--gold);
-  background:#ffffff08;
-  border-radius:0 18px 18px 0;
-  font-size:1.15rem;
-  color:#f4efff;
-}
+    .btn-primary {
+      background: var(--gold);
+      color: var(--deep);
+    }
 
-.feature-grid {
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:17px;
-  margin-top:28px;
-}
+    .btn-outline {
+      color: white;
+    }
 
-.card {
-  padding:23px;
-  border:1px solid var(--line);
-  border-radius:20px;
-  background:linear-gradient(145deg,#35204f,#241536);
-  box-shadow:0 12px 35px #0002;
-}
+    section {
+      padding: 85px 0;
+    }
 
-.card .icon { font-size:1.8rem; }
-.card h3 { margin:9px 0 6px; }
-.card p { color:var(--muted); margin:0; }
+    .section-heading {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 42px;
+    }
 
-.dark-section { background:#241536; }
+    .section-heading h2 {
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      margin: 8px 0 12px;
+    }
 
-.gallery {
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:18px;
-  margin-top:27px;
-}
+    .section-heading p,
+    .muted {
+      color: #cfc2df;
+    }
 
-.gallery-item {
-  overflow:hidden;
-  border-radius:19px;
-  border:1px solid #ffffff25;
-  background:#241536;
-}
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px;
+      align-items: center;
+    }
 
-.gallery-item img {
-  width:100%;
-  height:300px;
-  object-fit:cover;
-  transition:transform .3s;
-}
+    .about-image img {
+      height: 440px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+    }
 
-.gallery-item:hover img { transform:scale(1.035); }
+    .about-text h2 {
+      font-size: 2.2rem;
+      margin: 10px 0 18px;
+    }
 
-.gallery-caption {
-  padding:13px 16px;
-  color:var(--muted);
-  font-weight:700;
-}
+    .about-text p {
+      color: #d7cce4;
+      margin-bottom: 16px;
+    }
 
-.contact {
-  background:
-    radial-gradient(ellipse at 90% 0,#7652a8 0,transparent 40%),
-    #4b267d;
-  border-top:1px solid var(--line);
-}
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
 
-.contact-box {
-  padding:26px;
-  background:#1b102bcc;
-  border:1px solid var(--line);
-  border-radius:22px;
-}
+    .gallery-item {
+      overflow: hidden;
+      border-radius: 13px;
+      background: var(--card);
+      border: 1px solid var(--line);
+    }
 
-.contact-box p { color:var(--muted); }
-.number { font-weight:800; color:var(--gold); letter-spacing:.5px; }
-.smallnote { font-size:.83rem; color:#ded4ed; }
+    .gallery-item img {
+      height: 290px;
+      transition: transform .35s;
+    }
 
-footer {
-  padding:24px 0;
-  border-top:1px solid var(--line);
-  color:#ded4ed;
-  font-size:.9rem;
-}
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
 
-.footer-inner {
-  display:flex;
-  justify-content:space-between;
-  gap:12px;
-  flex-wrap:wrap;
-}
+    .gallery-caption {
+      padding: 12px 15px;
+      color: #eee7f7;
+      font-weight: 600;
+    }
 
-.whatsapp-float {
-  position:fixed;
-  right:17px;
-  bottom:17px;
-  z-index:30;
-  background:#25d366;
-  color:#06351b;
-  font-weight:850;
-  border-radius:999px;
-  padding:13px 18px;
-  box-shadow:0 10px 30px #0005;
-}
+    .programs {
+      background: #251638;
+    }
 
-@media(max-width:760px) {
-  .nav { align-items:flex-start; flex-direction:column; }
-  .navlinks { gap:12px; }
-  .hero { padding:50px 0; }
-  .hero-grid,.about-grid,.contact-grid { grid-template-columns:1fr; }
-  .hero-art img { height:340px; }
-  .about-photo img { height:320px; }
-  .feature-grid { grid-template-columns:1fr; }
-  .gallery { grid-template-columns:1fr 1fr; }
-  section { padding:52px 0; }
-}
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+    }
 
-@media(max-width:460px) {
-  .gallery { grid-template-columns:1fr; }
-  .gallery-item img { height:280px; }
-  .navlinks { font-size:.83rem; }
-  .whatsapp-float { right:10px; bottom:10px; padding:11px 14px; }
-}
-</style>
+    .program-card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .program-card img {
+      height: 270px;
+    }
+
+    .program-info {
+      padding: 22px;
+    }
+
+    .program-info h3 {
+      color: var(--gold);
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+
+    .program-info p {
+      color: #d7cce4;
+    }
+
+    .booking-box {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px;
+      text-align: center;
+      border-radius: 18px;
+      background: linear-gradient(135deg, #35204f, #251638);
+      border: 1px solid var(--line);
+    }
+
+    .booking-box h2 {
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin: 10px 0;
+    }
+
+    .booking-box p {
+      color: #d7cce4;
+      margin: 12px 0 22px;
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      text-align: center;
+      color: #cfc2df;
+      font-size: .9rem;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 18px;
+      bottom: 18px;
+      z-index: 99;
+      background: #25d366;
+      color: #102416;
+      padding: 12px 17px;
+      border-radius: 50px;
+      font-weight: 800;
+      box-shadow: 0 6px 25px #0005;
+    }
+
+    @media (max-width: 760px) {
+      nav {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .nav-links {
+        gap: 12px 18px;
+      }
+
+      .hero {
+        min-height: 75vh;
+        background-position: center;
+      }
+
+      .about-grid,
+      .program-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-image img {
+        height: 340px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+
+      .gallery-item img {
+        height: 200px;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .booking-box {
+        padding: 28px 18px;
+      }
+    }
+
+    @media (max-width: 420px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .gallery-item img {
+        height: 260px;
+      }
+
+      .nav-links {
+        gap: 10px 14px;
+      }
+
+      .nav-links a {
+        font-size: .84rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
-<div class="topline"></div>
 
-<header>
-  <div class="wrap nav">
-    <a class="brand" href="#home">🎶 SUBIN DAS</a>
-    <nav class="navlinks" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#programs">Programs</a>
-      <a href="#contact">Booking</a>
+  <header>
+    <nav class="container">
+      <a href="#home" class="logo">PAATUKAARAN FOLK</a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#programs">Programs</a>
+        <a href="#booking">Booking</a>
+      </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<main>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-content">
+          <div class="eyebrow">Kerala's Folk Tradition</div>
+          <h1>Experience the Soul of <span>Nadan Pattu</span></h1>
+          <p>
+            Celebrating Kerala's rich folk culture through traditional
+            songs, powerful performances and unforgettable stage experiences.
+          </p>
 
-<!-- HERO IMAGE: img4.jpg -->
-<section class="hero" id="home">
-  <div class="wrap hero-grid">
-    <div>
-      <div class="eyebrow">THE RHYTHMS OF KERALA</div>
-      <h1>Songs of the land,<br><span>our heritage.</span></h1>
-      <p>Bringing the rhythms of Kerala folk music and culture to the stage — <strong>Subin Das</strong>.</p>
-      <div class="actions">
-        <a class="btn" href="#contact">✦ Book for an Event</a>
-        <a class="btn secondary" href="#gallery">📸 View Gallery</a>
+          <div class="actions">
+            <a href="#gallery" class="btn btn-primary">View Gallery</a>
+            <a href="#booking" class="btn btn-outline">Book a Program</a>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="hero-art">
-      <img src="img4.jpg"
-           alt="Subin Das - Kerala Folk Artist"
-           fetchpriority="high">
-    </div>
-  </div>
-</section>
+    <section id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="subin-das.jpg"
+            alt="Subin Das, Kerala folk artist"
+            loading="lazy"
+          >
+        </div>
 
-<!-- ABOUT IMAGE: hero.jpg -->
-<section id="about">
-  <div class="wrap about-grid">
-    <div>
-      <div class="label">MEET THE ARTIST</div>
-      <h2 class="section-title">The music of the soil,<br>the voice of the people</h2>
-      <p class="lead">
-        Learn more about Subin Das, his folk music performances,
-        artistic journey, experience, and achievements.
-      </p>
-      <div class="quote">
-        “May the stories of our land reach the next generation through song.”
-        <br><small>— Subin Das</small>
+        <div class="about-text">
+          <div class="eyebrow">About the Artist</div>
+          <h2>Meet Subin Das</h2>
+          <p>
+            Dedicated to preserving and celebrating the vibrant traditions
+            of Kerala Nadan Pattu, Subin Das brings the spirit of folk culture
+            to audiences through energetic and memorable performances.
+          </p>
+          <p>
+            From cultural celebrations to stage programs and special events,
+            each performance is an opportunity to share the beauty of
+            Kerala's musical heritage.
+          </p>
+          <a href="#booking" class="btn btn-primary">Contact for Programs</a>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="about-photo">
-      <img src="hero.jpg"
-           alt="Subin Das artist portrait"
-           loading="lazy">
-    </div>
-  </div>
+    <section id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Moments & Memories</div>
+          <h2>Photo Gallery</h2>
+          <p>
+            A glimpse into the performances, celebrations and folk-art
+            experiences.
+          </p>
+        </div>
 
-  <div class="wrap feature-grid">
-    <article class="card">
-      <div class="icon">🌾</div>
-      <h3>Folk Music</h3>
-      <p>Traditional rhythms and the music of rural Kerala.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🥁</div>
-      <h3>Live Performances</h3>
-      <p>Festivals, cultural stages, and celebrations.</p>
-    </article>
-    <article class="card">
-      <div class="icon">🤝</div>
-      <h3>Event Booking</h3>
-      <p>Contact via WhatsApp for details and availability.</p>
-    </article>
-  </div>
-</section>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="folk-performance.jpg" alt="Traditional folk performance" loading="lazy">
+            <div class="gallery-caption">Folk Performance</div>
+          </div>
 
-<!-- GALLERY IMAGES: img1.jpg, stage-show.jpg,
-     folk-performance.jpg, img3.jpg -->
-<section id="gallery">
-  <div class="wrap">
-    <div class="label">MOMENTS ON STAGE</div>
-    <h2 class="section-title">Photo Gallery</h2>
-    <p class="lead">Memories, performances and moments from the folk music journey.</p>
+          <div class="gallery-item">
+            <img src="stage-show.jpg" alt="Live stage show" loading="lazy">
+            <div class="gallery-caption">Live Stage Show</div>
+          </div>
 
-    <div class="gallery">
-      <div class="gallery-item">
-        <img src="img1.jpg" alt="Subin Das gallery photo 1" loading="lazy">
-        <div class="gallery-caption">Folk Moments</div>
+          <div class="gallery-item">
+            <img src="img1.jpg" alt="Folk artist photo 1" loading="lazy">
+            <div class="gallery-caption">Performance Moments</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img2.jpg" alt="Folk artist photo 2" loading="lazy">
+            <div class="gallery-caption">Cultural Celebrations</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img3.jpg" alt="Folk artist photo 3" loading="lazy">
+            <div class="gallery-caption">Behind the Scenes</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="img4.jpg" alt="Folk artist photo 4" loading="lazy">
+            <div class="gallery-caption">Special Memories</div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="image5.jpg" alt="Folk artist photo 5" loading="lazy">
+            <div class="gallery-caption">More Moments</div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="gallery-item">
-        <img src="stage-show.jpg" alt="Subin Das stage show" loading="lazy">
-        <div class="gallery-caption">Stage Performance</div>
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Live Experiences</div>
+          <h2>Programs & Performances</h2>
+          <p>
+            Bringing traditional folk energy to celebrations, cultural events
+            and special occasions.
+          </p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card">
+            <img src="stage-show.jpg" alt="Stage performance" loading="lazy">
+            <div class="program-info">
+              <h3>Stage Programs</h3>
+              <p>
+                Engaging folk performances for public events, festivals
+                and stage shows.
+              </p>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <img src="folk-performance.jpg" alt="Traditional cultural event" loading="lazy">
+            <div class="program-info">
+              <h3>Cultural Events</h3>
+              <p>
+                Celebrate Kerala's cultural heritage with traditional
+                Nadan Pattu performances for your special occasion.
+              </p>
+            </div>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div class="gallery-item">
-        <img src="folk-performance.jpg" alt="Kerala folk performance" loading="lazy">
-        <div class="gallery-caption">Folk Performance</div>
+    <section id="booking">
+      <div class="container">
+        <div class="booking-box">
+          <div class="eyebrow">Let's Make It Memorable</div>
+          <h2>Book a Performance</h2>
+          <p>
+            Planning a cultural event, celebration or stage program?
+            Get in touch to discuss your event and booking details.
+          </p>
+
+          <a
+            class="btn btn-primary"
+            href="https://wa.me/919995971819?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20folk%20program."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Book via WhatsApp
+          </a>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="gallery-item">
-        <img src="img3.jpg" alt="Subin Das gallery photo 4" loading="lazy">
-        <div class="gallery-caption">Memorable Moments</div>
-      </div>
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Subin Das | Paatukaaran Folk</p>
+      <p>Celebrating the spirit of Kerala's folk tradition.</p>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- PROGRAMS -->
-<section id="programs" class="dark-section">
-  <div class="wrap">
-    <div class="label">ON STAGE</div>
-    <h2 class="section-title">Events & Booking</h2>
-    <p class="lead">Enquire about bookings for temple festivals, Onam celebrations, college events, cultural programs, and private celebrations.</p>
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/919995971819"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contact on WhatsApp"
+  >
+    WhatsApp
+  </a>
 
-    <div class="feature-grid">
-      <article class="card">
-        <div class="icon">🌼</div>
-        <h3>Festival Events</h3>
-        <p>Temple festivals and local celebrations.</p>
-      </article>
-      <article class="card">
-        <div class="icon">🎓</div>
-        <h3>College Events</h3>
-        <p>College days, arts festivals, and celebrations.</p>
-      </article>
-      <article class="card">
-        <div class="icon">🎪</div>
-        <h3>Cultural Programs</h3>
-        <p>Local and public cultural events.</p>
-      </article>
-    </div>
-  </div>
-</section>
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
 
-<!-- CONTACT & WHATSAPP BOOKING -->
-<section class="contact" id="contact">
-  <div class="wrap contact-grid">
-    <div>
-      <div class="label">CONTACT</div>
-      <h2 class="section-title">Bring folk music<br>to your next event.</h2>
-      <p class="lead">Send the event date, location, time, and type of program in your WhatsApp message.</p>
-      <p class="number">📞 +91 99959 71819</p>
-    </div>
-
-    <div class="contact-box">
-      <h3>Subin Das</h3>
-      <p>🎶 Kerala Folk Artist<br>📲 WhatsApp Booking</p>
-      <a class="btn"
-         href="https://wa.me/919995971819?text=Hello%20Subin%20Das%2C%20I%20would%20like%20to%20enquire%20about%20booking%20you%20for%20an%20event."
-         target="_blank" rel="noopener">
-        Book via WhatsApp ↗
-      </a>
-      <p class="smallnote">Tap the button to open WhatsApp with a prepared booking message. Add event details before sending.</p>
-    </div>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Subin Das · Nadan Pattu Artist</span>
-    <span>The songs and heritage of Kerala 💜</span>
-  </div>
-</footer>
-
-<a class="whatsapp-float"
-   href="https://wa.me/919995971819?text=Hello%20Subin%20Das%2C%20I%20would%20like%20to%20enquire%20about%20booking%20you%20for%20an%20event."
-   target="_blank" rel="noopener" aria-label="WhatsApp booking">
-  ☏ WhatsApp
-</a>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 </body>
 </html>
