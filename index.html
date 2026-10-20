@@ -2,386 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
-  <meta name="google-site-verification" content="AnAoYWAEVNBTMggDOMSBMVcTJXACUBgBYeCkQunXnoo" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#4b267d">
-  <meta name="description" content="Subin Das — Kerala Nadan Pattu artist. Explore folk performances, photo gallery and event booking.">
+  <meta name="theme-color" content="#1b102b">
+  <meta name="description" content="Discover Subin Das, Kerala Nadan Pattu folk artist. Explore traditional folk performances, stage shows, cultural events, photos, and booking details at Paatukaaran Folk.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://midhunarajesh.github.io/Paatukaaran_folk/">
 
-  <title>Paatukaaran folk | Kerala Folk Artist</title>
+  <title>Paatukaaran Folk | Subin Das | Kerala Nadan Pattu Artist</title>
+
+  <!-- Social sharing preview -->
+  <meta property="og:title" content="Paatukaaran Folk | Subin Das">
+  <meta property="og:description" content="Explore Kerala Nadan Pattu performances, cultural events, photos, and booking details.">
+  <meta property="og:url" content="https://midhunarajesh.github.io/Paatukaaran_folk/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Paatukaaran Folk">
+
+  <!-- Artist / website structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Subin Das",
+    "url": "https://midhunarajesh.github.io/Paatukaaran_folk/",
+    "jobTitle": "Kerala Nadan Pattu Folk Artist",
+    "description": "Kerala folk artist performing traditional Nadan Pattu, stage shows and cultural programs.",
+    "sameAs": [
+      "https://www.instagram.com/_paattukaran_folk_/"
+    ]
+  }
+  </script>
 
   <style>
     :root {
-      --green: #4b267d;
       --deep: #1b102b;
+      --purple: #4b267d;
       --leaf: #7652a8;
       --gold: #e7dcff;
       --cream: #ffffff;
-      --muted: #eee7f7;
+      --muted: #cfc2df;
       --card: #35204f;
       --line: #ffffff22;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; scroll-padding-top: 85px; }
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: var(--deep);
       color: var(--cream);
       line-height: 1.7;
     }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-      object-fit: cover;
-    }
-
-    .container {
-      width: min(1120px, 90%);
-      margin: auto;
-    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; width: 100%; object-fit: cover; }
+    .container { width: min(1120px, 90%); margin: auto; }
 
     header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: #1b102bf2;
-      border-bottom: 1px solid var(--line);
+      position: sticky; top: 0; z-index: 100;
+      background: #1b102bf2; border-bottom: 1px solid var(--line);
       backdrop-filter: blur(12px);
     }
-
     nav {
-      min-height: 76px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
     }
-
-    .logo {
-      color: var(--gold);
-      font-size: 1.2rem;
-      font-weight: 800;
-      letter-spacing: .5px;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 24px;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      font-size: .9rem;
-      color: #eee7f7;
-      transition: color .2s;
-    }
-
-    .nav-links a:hover {
-      color: var(--gold);
-    }
+    .logo { color: var(--gold); font-size: 1.2rem; font-weight: 800; letter-spacing: .5px; }
+    .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .nav-links a { font-size: .9rem; color: #eee7f7; transition: color .2s; }
+    .nav-links a:hover { color: var(--gold); }
 
     .hero {
-      min-height: 86vh;
-      display: flex;
-      align-items: center;
-      position: relative;
+      min-height: 86vh; display: flex; align-items: center; position: relative;
       background:
         linear-gradient(90deg, #1b102bf2 0%, #1b102bbd 52%, #1b102b55 100%),
         url("hero.jpg") center/cover no-repeat;
     }
-
-    .hero-content {
-      max-width: 720px;
-      padding: 90px 0;
-    }
-
+    .hero-content { max-width: 720px; padding: 90px 0; }
     .eyebrow {
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: .78rem;
-      font-weight: 700;
+      color: var(--gold); text-transform: uppercase; letter-spacing: 3px;
+      font-size: .78rem; font-weight: 700;
     }
-
-    h1 {
-      font-size: clamp(2.5rem, 7vw, 5rem);
-      line-height: 1.1;
-      margin: 18px 0;
-    }
-
-    h1 span {
-      color: var(--gold);
-    }
-
-    .hero p {
-      max-width: 600px;
-      color: #eee7f7;
-      font-size: 1.05rem;
-    }
-
-    .actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 28px;
-    }
-
+    h1 { font-size: clamp(2.5rem, 7vw, 5rem); line-height: 1.1; margin: 18px 0; }
+    h1 span { color: var(--gold); }
+    .hero p { max-width: 600px; color: #eee7f7; font-size: 1.05rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
     .btn {
-      display: inline-block;
-      padding: 12px 22px;
-      border: 1px solid var(--gold);
-      border-radius: 7px;
-      font-weight: 700;
-      transition: transform .2s, background .2s;
+      display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+      padding: 12px 22px; border: 1px solid var(--gold); border-radius: 7px;
+      font-weight: 700; transition: transform .2s, background .2s;
     }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      background: var(--gold);
-      color: var(--deep);
-    }
-
-    .btn-outline {
-      color: white;
-    }
-
-    section {
-      padding: 85px 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 42px;
-    }
-
-    .section-heading h2 {
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
-      margin: 8px 0 12px;
-    }
-
-    .section-heading p,
-    .muted {
-      color: #cfc2df;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 42px;
-      align-items: center;
-    }
-
-    .about-image img {
-      height: 440px;
-      border-radius: 18px;
-      border: 1px solid var(--line);
-    }
-
-    .about-text h2 {
-      font-size: 2.2rem;
-      margin: 10px 0 18px;
-    }
-
-    .about-text p {
-      color: #d7cce4;
-      margin-bottom: 16px;
-    }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .gallery-item {
-      overflow: hidden;
-      border-radius: 13px;
-      background: var(--card);
-      border: 1px solid var(--line);
-    }
-
-    .gallery-item img {
-      height: 290px;
-      transition: transform .35s;
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.04);
-    }
-
-    .gallery-caption {
-      padding: 12px 15px;
-      color: #eee7f7;
-      font-weight: 600;
-    }
-
-    .programs {
-      background: #251638;
-    }
-
-    .program-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 22px;
-    }
-
-    .program-card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      overflow: hidden;
-    }
-
-    .program-card img {
-      height: 270px;
-    }
-
-    .program-info {
-      padding: 22px;
-    }
-
-    .program-info h3 {
-      color: var(--gold);
-      font-size: 1.3rem;
-      margin-bottom: 8px;
-    }
-
-    .program-info p {
-      color: #d7cce4;
-    }
-
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--gold); color: var(--deep); }
+    .btn-outline { color: white; }
+    section { padding: 85px 0; }
+    .section-heading { text-align: center; max-width: 700px; margin: 0 auto 42px; }
+    .section-heading h2 { font-size: clamp(1.9rem, 4vw, 2.8rem); margin: 8px 0 12px; }
+    .section-heading p, .muted { color: var(--muted); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; align-items: center; }
+    .about-image img { height: 440px; border-radius: 18px; border: 1px solid var(--line); }
+    .about-text h2 { font-size: 2.2rem; margin: 10px 0 18px; }
+    .about-text p { color: #d7cce4; margin-bottom: 16px; }
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .gallery-item { overflow: hidden; border-radius: 13px; background: var(--card); border: 1px solid var(--line); }
+    .gallery-item img { height: 290px; transition: transform .35s; }
+    .gallery-item:hover img { transform: scale(1.04); }
+    .gallery-caption { padding: 12px 15px; color: #eee7f7; font-weight: 600; }
+    .programs { background: #251638; }
+    .program-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+    .program-card { background: var(--card); border: 1px solid var(--line); border-radius: 15px; overflow: hidden; }
+    .program-card img { height: 270px; }
+    .program-info { padding: 22px; }
+    .program-info h3 { color: var(--gold); font-size: 1.3rem; margin-bottom: 8px; }
+    .program-info p { color: #d7cce4; }
     .booking-box {
-      max-width: 800px;
-      margin: auto;
-      padding: 40px;
-      text-align: center;
-      border-radius: 18px;
-      background: linear-gradient(135deg, #35204f, #251638);
+      max-width: 800px; margin: auto; padding: 40px; text-align: center;
+      border-radius: 18px; background: linear-gradient(135deg, #35204f, #251638);
       border: 1px solid var(--line);
     }
-
-    .booking-box h2 {
-      font-size: clamp(1.8rem, 4vw, 2.6rem);
-      margin: 10px 0;
+    .booking-box h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 10px 0; }
+    .booking-box p { color: #d7cce4; margin: 12px 0 22px; }
+    .social-box {
+      max-width: 800px; margin: 28px auto 0; padding: 25px;
+      text-align: center; border-radius: 16px; background: #251638;
+      border: 1px solid var(--line);
     }
-
-    .booking-box p {
-      color: #d7cce4;
-      margin: 12px 0 22px;
-    }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 28px 0;
-      text-align: center;
-      color: #cfc2df;
-      font-size: .9rem;
-    }
-
+    .social-box h3 { color: var(--gold); font-size: 1.25rem; margin-bottom: 7px; }
+    .social-box p { color: #d7cce4; margin-bottom: 16px; }
+    .instagram-btn { background: #d62976; border-color: #d62976; color: white; }
+    footer { border-top: 1px solid var(--line); padding: 28px 0; text-align: center; color: var(--muted); font-size: .9rem; }
     .whatsapp-float {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      z-index: 99;
-      background: #25d366;
-      color: #102416;
-      padding: 12px 17px;
-      border-radius: 50px;
-      font-weight: 800;
-      box-shadow: 0 6px 25px #0005;
+      position: fixed; right: 18px; bottom: 18px; z-index: 99;
+      background: #25d366; color: #102416; padding: 12px 17px;
+      border-radius: 50px; font-weight: 800; box-shadow: 0 6px 25px #0005;
     }
 
     @media (max-width: 760px) {
-      nav {
-        padding: 14px 0;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .nav-links {
-        gap: 12px 18px;
-      }
-
-      .hero {
-        min-height: 75vh;
-        background-position: center;
-      }
-
-      .about-grid,
-      .program-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .about-image img {
-        height: 340px;
-      }
-
-      .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
-      }
-
-      .gallery-item img {
-        height: 200px;
-      }
-
-      section {
-        padding: 62px 0;
-      }
-
-      .booking-box {
-        padding: 28px 18px;
-      }
+      nav { padding: 14px 0; align-items: flex-start; flex-direction: column; }
+      .nav-links { gap: 12px 18px; }
+      .hero { min-height: 75vh; background-position: center; }
+      .about-grid, .program-grid { grid-template-columns: 1fr; }
+      .about-image img { height: 340px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .gallery-item img { height: 200px; }
+      section { padding: 62px 0; }
+      .booking-box { padding: 28px 18px; }
     }
-
     @media (max-width: 420px) {
-      .gallery-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .gallery-item img {
-        height: 260px;
-      }
-
-      .nav-links {
-        gap: 10px 14px;
-      }
-
-      .nav-links a {
-        font-size: .84rem;
-      }
+      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-item img { height: 260px; }
+      .nav-links { gap: 10px 14px; }
+      .nav-links a { font-size: .84rem; }
     }
   </style>
 </head>
 
 <body>
-
   <header>
-    <nav class="container">
+    <nav class="container" aria-label="Main navigation">
       <a href="#home" class="logo">PAATUKAARAN FOLK</a>
-
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
@@ -399,10 +176,9 @@
           <div class="eyebrow">Kerala's Folk Tradition</div>
           <h1>Experience the Soul of <span>Nadan Pattu</span></h1>
           <p>
-            Celebrating Kerala's rich folk culture through traditional
-            songs, powerful performances and unforgettable stage experiences.
+            Celebrating Kerala's rich folk culture through traditional songs,
+            powerful performances and unforgettable stage experiences.
           </p>
-
           <div class="actions">
             <a href="#gallery" class="btn btn-primary">View Gallery</a>
             <a href="#booking" class="btn btn-outline">Book a Program</a>
@@ -414,25 +190,20 @@
     <section id="about">
       <div class="container about-grid">
         <div class="about-image">
-          <img
-            src="subin-das.jpg"
-            alt="Subin Das, Kerala folk artist"
-            loading="lazy"
-          >
+          <img src="subin-das.jpg" alt="Subin Das, Kerala Nadan Pattu folk artist" loading="lazy">
         </div>
-
         <div class="about-text">
           <div class="eyebrow">About the Artist</div>
           <h2>Meet Subin Das</h2>
           <p>
-            Dedicated to preserving and celebrating the vibrant traditions
-            of Kerala Nadan Pattu, Subin Das brings the spirit of folk culture
-            to audiences through energetic and memorable performances.
+            Dedicated to preserving and celebrating the vibrant traditions of
+            Kerala Nadan Pattu, Subin Das brings the spirit of folk culture to
+            audiences through energetic and memorable performances.
           </p>
           <p>
             From cultural celebrations to stage programs and special events,
-            each performance is an opportunity to share the beauty of
-            Kerala's musical heritage.
+            each performance is an opportunity to share the beauty of Kerala's
+            musical heritage.
           </p>
           <a href="#booking" class="btn btn-primary">Contact for Programs</a>
         </div>
@@ -444,45 +215,35 @@
         <div class="section-heading">
           <div class="eyebrow">Moments & Memories</div>
           <h2>Photo Gallery</h2>
-          <p>
-            A glimpse into the performances, celebrations and folk-art
-            experiences.
-          </p>
+          <p>A glimpse into the performances, celebrations and folk-art experiences.</p>
         </div>
-
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="folk-performance.jpg" alt="Traditional folk performance" loading="lazy">
+            <img src="folk-performance.jpg" alt="Subin Das performing Kerala Nadan Pattu" loading="lazy">
             <div class="gallery-caption">Folk Performance</div>
           </div>
-
           <div class="gallery-item">
-            <img src="stage-show.jpg" alt="Live stage show" loading="lazy">
+            <img src="stage-show.jpg" alt="Subin Das live stage show" loading="lazy">
             <div class="gallery-caption">Live Stage Show</div>
           </div>
-
           <div class="gallery-item">
-            <img src="img1.jpg" alt="Folk artist photo 1" loading="lazy">
+            <img src="img1.jpg" alt="Subin Das folk artist photo 1" loading="lazy">
             <div class="gallery-caption">Performance Moments</div>
           </div>
-
           <div class="gallery-item">
-            <img src="img2.jpg" alt="Folk artist photo 2" loading="lazy">
+            <img src="img2.jpg" alt="Kerala folk cultural celebration" loading="lazy">
             <div class="gallery-caption">Cultural Celebrations</div>
           </div>
-
           <div class="gallery-item">
-            <img src="img3.jpg" alt="Folk artist photo 3" loading="lazy">
+            <img src="img3.jpg" alt="Subin Das behind the scenes" loading="lazy">
             <div class="gallery-caption">Behind the Scenes</div>
           </div>
-
           <div class="gallery-item">
-            <img src="img4.jpg" alt="Folk artist photo 4" loading="lazy">
+            <img src="img4.jpg" alt="Subin Das folk program memories" loading="lazy">
             <div class="gallery-caption">Special Memories</div>
           </div>
-
           <div class="gallery-item">
-            <img src="image5.jpg" alt="Folk artist photo 5" loading="lazy">
+            <img src="image5.jpg" alt="More photos of Kerala folk artist Subin Das" loading="lazy">
             <div class="gallery-caption">More Moments</div>
           </div>
         </div>
@@ -494,32 +255,21 @@
         <div class="section-heading">
           <div class="eyebrow">Live Experiences</div>
           <h2>Programs & Performances</h2>
-          <p>
-            Bringing traditional folk energy to celebrations, cultural events
-            and special occasions.
-          </p>
+          <p>Bringing traditional folk energy to celebrations, cultural events and special occasions.</p>
         </div>
-
         <div class="program-grid">
           <article class="program-card">
-            <img src="stage-show.jpg" alt="Stage performance" loading="lazy">
+            <img src="stage-show.jpg" alt="Stage performance by Subin Das" loading="lazy">
             <div class="program-info">
               <h3>Stage Programs</h3>
-              <p>
-                Engaging folk performances for public events, festivals
-                and stage shows.
-              </p>
+              <p>Engaging folk performances for public events, festivals and stage shows.</p>
             </div>
           </article>
-
           <article class="program-card">
-            <img src="folk-performance.jpg" alt="Traditional cultural event" loading="lazy">
+            <img src="folk-performance.jpg" alt="Traditional Kerala cultural event" loading="lazy">
             <div class="program-info">
               <h3>Cultural Events</h3>
-              <p>
-                Celebrate Kerala's cultural heritage with traditional
-                Nadan Pattu performances for your special occasion.
-              </p>
+              <p>Celebrate Kerala's cultural heritage with traditional Nadan Pattu performances for your special occasion.</p>
             </div>
           </article>
         </div>
@@ -531,18 +281,22 @@
         <div class="booking-box">
           <div class="eyebrow">Let's Make It Memorable</div>
           <h2>Book a Performance</h2>
-          <p>
-            Planning a cultural event, celebration or stage program?
-            Get in touch to discuss your event and booking details.
-          </p>
-
-          <a
-            class="btn btn-primary"
-            href="https://wa.me/919995971819?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20folk%20program."
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <p>Planning a cultural event, celebration or stage program? Get in touch to discuss your event and booking details.</p>
+          <a class="btn btn-primary"
+             href="https://wa.me/919995971819?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20a%20folk%20program."
+             target="_blank" rel="noopener noreferrer">
             Book via WhatsApp
+          </a>
+        </div>
+
+        <div class="social-box">
+          <h3>Follow Paatukaaran Folk on Instagram</h3>
+          <p>See more folk performances, photos, reels and program updates.</p>
+          <a class="btn instagram-btn"
+             href="https://www.instagram.com/_paattukaran_folk_/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="Follow Paatukaaran Folk on Instagram">
+            Instagram: @_paattukaran_folk_
           </a>
         </div>
       </div>
@@ -553,23 +307,19 @@
     <div class="container">
       <p>© <span id="year"></span> Subin Das | Paatukaaran Folk</p>
       <p>Celebrating the spirit of Kerala's folk tradition.</p>
+      <p><a href="https://www.instagram.com/_paattukaran_folk_/" target="_blank" rel="noopener noreferrer">Instagram: @_paattukaran_folk_</a></p>
     </div>
   </footer>
 
-  <a
-    class="whatsapp-float"
-    href="https://wa.me/919995971819"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contact on WhatsApp"
-  >
+  <a class="whatsapp-float"
+     href="https://wa.me/919995971819"
+     target="_blank" rel="noopener noreferrer"
+     aria-label="Contact on WhatsApp">
     WhatsApp
   </a>
 
   <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
